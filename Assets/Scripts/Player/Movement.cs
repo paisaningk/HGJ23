@@ -1,15 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
+using Manager;
 using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
+    public bool canMove = true;
     public float moveSpeed = 6;
-    public Rigidbody2D rigidbody2D;
+    public new Rigidbody2D rigidbody2D;
 
     private void Update()
     {
-        Move(GetDirection());
+        if (canMove)
+        {
+            Move(GetDirection());
+        }
+        
     }
 
     private void Move(Vector2 direction)
@@ -19,8 +25,24 @@ public class Movement : MonoBehaviour
 
     private Vector2 GetDirection()
     {
-        var horizontal = Input.GetAxis("Horizontal");
-        var vertical = Input.GetAxis("Vertical");
-        return new Vector2(horizontal, vertical);
+        return new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
+    }
+
+    public void SetCanMove(bool move)
+    {
+        canMove = move;
+    }
+
+    public void StartMove()
+    {
+        canMove = true;
+        rigidbody2D.simulated = true;
+    }
+
+    public void StopMove()
+    {
+        canMove = false;
+        rigidbody2D.velocity = Vector2.zero;
+        rigidbody2D.simulated = false;
     }
 }
