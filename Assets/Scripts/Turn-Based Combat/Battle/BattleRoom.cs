@@ -54,21 +54,45 @@ namespace Turn_Based_Combat.Battle
             enemy.transform.DOMove(spawnEnemyPoint.position, 1f);
 
             cameraBattleRoom.enabled = true;
+            player.enemyToFight = enemy;
+
+            ActionUI.Instance.OpenUI();
+            ActionUI.Instance.onUseAction += EnemyTurn;
+
+            BattleHPUI.Instance.OpenUI(enemy);
 
             PlayerTurn();
         }
 
+        private void CloseBattleRoom()
+        {
+            ActionUI.Instance.onUseAction = null;
+        }
+
         private void PlayerTurn()
         {
-            gameState = GameState.PlayerTurn;
-            BattleUI.Instance.OpenUI();
+            player.ResetDef();
+            BattleHPUI.Instance.SetTurn(true);
+            ActionUI.Instance.OpenUI();
+
+            Debug.Log("Player");
+        }
+
+        private void PlayerAttack()
+        {
+            player.ResetDef();
         }
 
         private void EnemyTurn()
         {
-            gameState = GameState.EnemyTurn;
-            enemy.DoSomething(player);
-            BattleUI.Instance.OpenUI();
+            BattleHPUI.Instance.SetTurn(false);
+
+            enemy.ResetDef();
+            enemy.DoSomething(player, PlayerTurn);
+
+            ActionUI.Instance.CloseUI();
+
+            Debug.Log("Enemy Player");
         }
     }
 }

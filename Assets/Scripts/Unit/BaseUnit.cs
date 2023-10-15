@@ -1,5 +1,6 @@
 ﻿using System;
 using Turn_Based_Combat.Character;
+using UI;
 using UnityEngine;
 
 namespace Unit
@@ -7,18 +8,31 @@ namespace Unit
     public class BaseUnit : MonoBehaviour
     {
         public BaseStatus status;
-        public int hp;
+        public float maxHp;
+        public int maxFear;
+        public float hp;
         public int fear;
         public bool isDead;
+        public bool isDef;
+        
         public Animator animator;
+        public TalkUI talkUI;
+        
 
         private void OnValidate()
         {
             if (status)
             {
+                maxHp = status.hp;
+                maxFear = status.fear;
                 hp = status.hp;
                 fear = status.fear;
             }
+        }
+
+        public void ResetDef()
+        {
+            isDef = false;
         }
 
         /// <summary>
@@ -28,7 +42,15 @@ namespace Unit
         /// <returns></returns>
         public bool TakeDamage(int damage)
         {
-            hp -= damage;
+            if (isDef)
+            {
+                hp -= (damage * 0.5f);
+            }
+            else
+            {
+                hp -= damage;
+            }
+            
             if (hp <= 0)
             {
                 isDead = true;

@@ -7,8 +7,9 @@ namespace Turn_Based_Combat.Character
     [CreateAssetMenu(fileName = "Player Status", menuName = "Status/Player Status")]
     public class PlayerStatus : BaseStatus
     {
-        public List<AttackAction> attack;
-        public List<BaseAction> talk;
+        public BaseAction attack;
+        public BaseAction talk;
+        public BaseAction def;
         public List<BaseAction> item;
     }
 }
