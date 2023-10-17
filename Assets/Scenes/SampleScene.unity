@@ -4575,10 +4575,10 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 1
-  m_Mass: 3.1513927
+  m_Mass: 3.268129
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0.3
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -4635,7 +4635,7 @@ Animator:
   m_GameObject: {fileID: 2718859305919144319}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 21173e3c1bdc55b47ad37e34f13052d1, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -4658,7 +4658,7 @@ GameObject:
   - component: {fileID: 6880012374359446258}
   - component: {fileID: 2445384916827100716}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4687,6 +4687,7 @@ MonoBehaviour:
   canMove: 1
   moveSpeed: 1000
   rigidbody2D: {fileID: 11923820901543983}
+  animator: {fileID: 2445384916827100716}
 --- !u!4 &5128496199456398579
 Transform:
   m_ObjectHideFlags: 0
@@ -4696,7 +4697,7 @@ Transform:
   m_GameObject: {fileID: 2718859305919144319}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1987677483793004287}
@@ -4712,7 +4713,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1987677483793004287}
   - component: {fileID: 11923820901543983}
-  - component: {fileID: 6086193992572686085}
+  - component: {fileID: 9169340730098458011}
   - component: {fileID: 3751345550531470802}
   - component: {fileID: 9169340730098458010}
   m_Layer: 0
@@ -4742,41 +4743,6 @@ RectTransform:
   m_AnchoredPosition: {x: 656.34, y: -70.86}
   m_SizeDelta: {x: 1272.68, y: 111.72}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!70 &6086193992572686085
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5282712450574750017}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 2, y: 2}
-  m_Direction: 0
 --- !u!114 &6420024031283183385
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4941,8 +4907,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 0.9433962, g: 0.43075827, b: 0.43075827, a: 1}
+  m_Sprite: {fileID: -56899764, guid: 9fabef044bddf204ba82baee61241797, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -4988,6 +4954,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Talk UI
       objectReference: {fileID: 0}
+    - target: {fileID: 7758920547946249222, guid: 435fac833dedfe14b863fd218f41c773, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: eb47f672f8768c943a1af6779897bfcf, type: 3}
     - target: {fileID: 7758920547951974728, guid: 435fac833dedfe14b863fd218f41c773, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -5054,11 +5024,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7758920547951974728, guid: 435fac833dedfe14b863fd218f41c773, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -0.44
+      value: -0.1
       objectReference: {fileID: 0}
     - target: {fileID: 7758920547951974728, guid: 435fac833dedfe14b863fd218f41c773, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 1.27
+      value: 0.82
       objectReference: {fileID: 0}
     - target: {fileID: 7758920547951974728, guid: 435fac833dedfe14b863fd218f41c773, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -5531,3 +5501,48 @@ MonoBehaviour:
   talkUI: {fileID: 6892442641018906508}
   movement: {fileID: 3751345550531470802}
   enemyToFight: {fileID: 0}
+--- !u!61 &9169340730098458011
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5282712450574750017}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.05633855, y: -0.12519693}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.0307875, y: 1.6092916}
+  m_EdgeRadius: 0

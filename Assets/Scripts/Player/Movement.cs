@@ -8,14 +8,38 @@ public class Movement : MonoBehaviour
     public bool canMove = true;
     public float moveSpeed = 6;
     public new Rigidbody2D rigidbody2D;
+    public Animator animator;
+    public SpriteRenderer sprite;
 
     private void Update()
     {
+        var direction = GetDirection();
+        animator.Play(GetDirection() == Vector2.zero ? "PlayerIdle" : "Player_Walk");
+
+        if (direction.y > 0)
+        {
+            rigidbody2D.gravityScale = 0.1f;
+        }
+        else
+        {
+            rigidbody2D.gravityScale = 2f;
+        }
+
+        if (direction.x < 0)
+        {
+            sprite.flipX = true;
+        }
+
+        if (direction.x > 0)
+        {
+            sprite.flipX = false;
+        }
+      
+        
         if (canMove)
         {
-            Move(GetDirection());
+            Move(direction);
         }
-        
     }
 
     private void Move(Vector2 direction)

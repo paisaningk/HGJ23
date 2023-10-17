@@ -124,8 +124,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 35ffca58f193ee941a01e80da726108a
-      internalID: 852754415
+      spriteID: 893acfcddb397e84bbbd026fc076dedd
+      internalID: 1785005886
       vertices: []
       indices: 
       edges: []
@@ -145,8 +145,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4c15086f6738c3d44a224fad12fa887f
-      internalID: 1709136135
+      spriteID: 75bf1b6590efd4144abd4bc0cdce1249
+      internalID: -1965536614
       vertices: []
       indices: 
       edges: []
@@ -166,8 +166,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7c2663e8c4de13f42bda25c766cbf6c2
-      internalID: -284907037
+      spriteID: 2df6719b71f97f544a4049a9773cf75f
+      internalID: 1134758510
       vertices: []
       indices: 
       edges: []
@@ -187,8 +187,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9b14b387b79df354b9e03100f987da55
-      internalID: -1304737562
+      spriteID: 1bcc7585e0323de42b7b51e89b177277
+      internalID: -1704890728
       vertices: []
       indices: 
       edges: []
@@ -208,8 +208,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 123aeec858a468446a613e4fb049c7d6
-      internalID: -1994369699
+      spriteID: bfc30b7e26a69ee4bbea68ce8b4cda6f
+      internalID: -1521946078
       vertices: []
       indices: 
       edges: []
@@ -229,8 +229,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d928238a7653ada4fae150590146ffba
-      internalID: -1716087931
+      spriteID: ee6615fd9852069419bf41a1a1112930
+      internalID: 167439104
       vertices: []
       indices: 
       edges: []
@@ -246,12 +246,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Kid_idle_0: 852754415
-      Kid_idle_1: 1709136135
-      Kid_idle_2: -284907037
-      Kid_idle_3: -1304737562
-      Kid_idle_4: -1994369699
-      Kid_idle_5: -1716087931
+      Kid_idle_0: 1785005886
+      Kid_idle_1: -1965536614
+      Kid_idle_2: 1134758510
+      Kid_idle_3: -1704890728
+      Kid_idle_4: -1521946078
+      Kid_idle_5: 167439104
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
