@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -108,7 +108,133 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Twin_idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 290
+        width: 374
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 912c73da410af1a48b6e49970efcc682
+      internalID: 839276033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Twin_idle_1
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 290
+        width: 374
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 521e1a2820a27eb43b05508e11a50593
+      internalID: 531737525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Twin_idle_2
+      rect:
+        serializedVersion: 2
+        x: 748
+        y: 290
+        width: 374
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee252c3722977c542be98fe82ffaf87e
+      internalID: -1410676244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Twin_idle_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 374
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be7bae03ac7d1334aba4a057132e7ea1
+      internalID: -486605778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Twin_idle_4
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 0
+        width: 374
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b001cc0d0b23a8488d889154ef6b1a8
+      internalID: -1297301642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Twin_idle_5
+      rect:
+        serializedVersion: 2
+        x: 748
+        y: 0
+        width: 374
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef268d6aa33d8cf4588e848049fc949a
+      internalID: -816553855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -119,7 +245,13 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Twin_idle_0: 839276033
+      Twin_idle_1: 531737525
+      Twin_idle_2: -1410676244
+      Twin_idle_3: -486605778
+      Twin_idle_4: -1297301642
+      Twin_idle_5: -816553855
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
