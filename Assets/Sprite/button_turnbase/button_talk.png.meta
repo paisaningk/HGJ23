@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 728bcf55aff158440808d553c39c62bb
+guid: 322b8b44da4a3cb4f8ec51c007353b20
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,76 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Kid_idle_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 227
-        width: 266
-        height: 227
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 893acfcddb397e84bbbd026fc076dedd
-      internalID: 1785005886
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Kid_idle_1
-      rect:
-        serializedVersion: 2
-        x: 266
-        y: 227
-        width: 266
-        height: 227
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 75bf1b6590efd4144abd4bc0cdce1249
-      internalID: -1965536614
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Kid_idle_2
-      rect:
-        serializedVersion: 2
-        x: 532
-        y: 227
-        width: 266
-        height: 227
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2df6719b71f97f544a4049a9773cf75f
-      internalID: 1134758510
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Kid_idle_3
+      name: button_talk_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 266
-        height: 227
+        width: 159
+        height: 106
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -187,20 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1bcc7585e0323de42b7b51e89b177277
-      internalID: -1704890728
+      spriteID: 6cebbc386d89e0c4681324b7b547c342
+      internalID: 1223790909
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kid_idle_4
+      name: button_talk_1
       rect:
         serializedVersion: 2
-        x: 266
+        x: 159
         y: 0
-        width: 266
-        height: 227
+        width: 159
+        height: 106
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -208,20 +145,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bfc30b7e26a69ee4bbea68ce8b4cda6f
-      internalID: -1521946078
+      spriteID: 90a14ed6d54e3f349add652d0c12b889
+      internalID: -687646483
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kid_idle_5
+      name: button_talk_2
       rect:
         serializedVersion: 2
-        x: 532
+        x: 318
         y: 0
-        width: 266
-        height: 227
+        width: 159
+        height: 106
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -229,8 +166,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ee6615fd9852069419bf41a1a1112930
-      internalID: 167439104
+      spriteID: 7dda1ffd630f81c41be65223ec728dae
+      internalID: 831800614
       vertices: []
       indices: 
       edges: []
@@ -246,12 +183,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Kid_idle_0: 1785005886
-      Kid_idle_1: -1965536614
-      Kid_idle_2: 1134758510
-      Kid_idle_3: -1704890728
-      Kid_idle_4: -1521946078
-      Kid_idle_5: 167439104
+      button_talk_0: 1223790909
+      button_talk_1: -687646483
+      button_talk_2: 831800614
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
