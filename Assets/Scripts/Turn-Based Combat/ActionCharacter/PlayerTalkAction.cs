@@ -23,7 +23,7 @@ namespace Turn_Based_Combat.ActionCharacter
 
             if (talkEnemy != null)
             {
-                other.talkUI.OpenUI(talkEnemy.textInGame[Random.Range(0, talkEnemy.textInGame.Count - 1)].th, 5);
+                other.talkUI.OpenUI(talkEnemy.textInGame[Random.Range(0, talkEnemy.textInGame.Count)].th, 5);
             }
 
             BattleHPUI.Instance.doingText.SetText($"{self.status.characterName} พูดกับ {other.status.characterName}");

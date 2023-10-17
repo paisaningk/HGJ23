@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 7a92f3da1d3f7fe40b1eb8841663de68
+guid: 3a6af481b5a76854abd17be1dfb99019
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -45,7 +45,7 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 0
+  spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
@@ -110,76 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Twin_idle_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 290
-        width: 374
-        height: 290
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b90eec8b79962a040b84664b8cb33f3d
-      internalID: 1150818672
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Twin_idle_1
-      rect:
-        serializedVersion: 2
-        x: 374
-        y: 290
-        width: 374
-        height: 290
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8cbb32aea81d15846b88b1cfd05d1017
-      internalID: 901538065
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Twin_idle_2
-      rect:
-        serializedVersion: 2
-        x: 748
-        y: 290
-        width: 374
-        height: 290
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 39e3f31bbc09e6a4796be0c60ce1d2aa
-      internalID: 1263659679
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Twin_idle_3
+      name: Dog_lose_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 374
-        height: 290
+        width: 326
+        height: 187
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -187,20 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 45a1fec61d5503e4fa4e98ae6fa79081
-      internalID: -1605989296
+      spriteID: 8b1884939ff567648a91d16c559ad121
+      internalID: -539756652
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Twin_idle_4
+      name: Dog_lose_1
       rect:
         serializedVersion: 2
-        x: 374
+        x: 326
         y: 0
-        width: 374
-        height: 290
+        width: 326
+        height: 187
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -208,29 +145,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 89641d39d2747c344983fdbf334fc931
-      internalID: 394201970
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Twin_idle_5
-      rect:
-        serializedVersion: 2
-        x: 748
-        y: 0
-        width: 374
-        height: 290
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8baba7d5885998e4f91e705a3a0f1efd
-      internalID: 404781280
+      spriteID: fb0d5a8e16cf299478696660d2f4f5f1
+      internalID: 146137700
       vertices: []
       indices: 
       edges: []
@@ -246,12 +162,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Twin_idle_0: 1150818672
-      Twin_idle_1: 901538065
-      Twin_idle_2: 1263659679
-      Twin_idle_3: -1605989296
-      Twin_idle_4: 394201970
-      Twin_idle_5: 404781280
+      Dog_lose_0: -539756652
+      Dog_lose_1: 146137700
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
