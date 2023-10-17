@@ -2,6 +2,7 @@
 {
     public enum EnemyType
     {
+        Dog,
         YoungChild,
         Cat,
         Twin,

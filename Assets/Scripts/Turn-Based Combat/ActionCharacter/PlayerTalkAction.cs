@@ -14,16 +14,18 @@ namespace Turn_Based_Combat.ActionCharacter
     public class PlayerTalkAction : BaseAction
     {
         public List<EnemyReactionTalk> talkEnemyList;
+        public List<string> vfxText;
 
         public override void DoAction(BaseUnit self, BaseUnit other)
         {
-            self.talkUI.OpenUI("แฮร่ แฮร่ แฮร่", 5);
+            self.talkUI.OpenUI($"{vfxText[Random.Range(0, vfxText.Count)]}แฮร่ แฮร่ แฮร่", timeInAction);
             var status = (EnemyStatus)other.status;
             var talkEnemy = talkEnemyList.FirstOrDefault(enemy => enemy.enemyType == status.enemyType);
 
             if (talkEnemy != null)
             {
-                other.talkUI.OpenUI(talkEnemy.textInGame[Random.Range(0, talkEnemy.textInGame.Count)].th, 5);
+                other.talkUI.OpenUI(talkEnemy.textInGame[Random.Range(0, talkEnemy.textInGame.Count)].th,
+                    timeInAction);
             }
 
             BattleHPUI.Instance.doingText.SetText($"{self.status.characterName} พูดกับ {other.status.characterName}");

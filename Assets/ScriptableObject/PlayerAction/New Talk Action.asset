@@ -12,12 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98a2ab3cd8414c3ba7ad815d8a72f91b, type: 3}
   m_Name: New Talk Action
   m_EditorClassIdentifier: 
+  timeInAction: 5
   talkEnemyList:
   - enemyType: 0
     textInGame:
-    - th: "\u0E17\u0E33\u0E44\u0E23\u0E27\u0E30"
+    - th: "<shake>\u0E41\u0E1A \u0E41\u0E1A \u0E41\u0E1A"
       eng: 
-    - th: "\u0E07\u0E07"
+    - th: '<rainb>woof '
       eng: 
-    - th: "\u0E1F\u0E1F\u0E1F\u0E1F\u0E1F\u0E1F\u0E1F\u0E1F\u0E1F\u0E1F"
+    - th: "<shake>\u0E1A\u0E39 \u0E1A\u0E39 \u0E1A\u0E39"
       eng: 
+  vfxText:
+  - <wiggle>
+  - <rainb>
+  - <shake>

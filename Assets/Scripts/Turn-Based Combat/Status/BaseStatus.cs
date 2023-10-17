@@ -9,5 +9,7 @@ namespace Turn_Based_Combat.Character
         public string characterName;
         public int hp;
         public int fear;
+        
+        
     }
 }
