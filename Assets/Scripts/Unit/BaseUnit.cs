@@ -15,10 +15,17 @@ namespace Unit
         public bool isDead;
         public bool isDef;
         
+        public int maxUseHeal = 1;
+        public int useHeal;
+        
         public Animator animator;
         public TalkUI talkUI;
-        
 
+        public bool CanUseHeal()
+        {
+            return useHeal != maxUseHeal;
+        }
+        
         private void OnValidate()
         {
             if (status)
@@ -37,6 +44,7 @@ namespace Unit
 
         public void Heal(int i)
         {
+            useHeal++;
             hp += i;
             if (hp > maxHp)
             {

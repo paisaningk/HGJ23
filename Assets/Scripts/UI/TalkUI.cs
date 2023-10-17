@@ -16,13 +16,13 @@ namespace UI
             CloseUI();
         }
 
-        public void OpenUI(string s, int time)
+        public void OpenUI(string s, float time)
         {
             OpenUI(s);
             StartCoroutine(CloseUIByTime(time));
         }
 
-        private IEnumerator CloseUIByTime(int time)
+        private IEnumerator CloseUIByTime(float time)
         {
             yield return new WaitForSeconds(time);
             CloseUI();

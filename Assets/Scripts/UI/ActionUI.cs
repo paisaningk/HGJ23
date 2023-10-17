@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using Turn_Based_Combat.ActionCharacter;
 using Turn_Based_Combat.Character;
 using Unit;
 using UnityEngine;
@@ -15,7 +16,7 @@ namespace UI
         public Button attackButton;
         public Button defButton;
         public Button talkButton;
-        public Button itemButton;
+        public Button healButton;
         public UnityAction onUseAction;
 
         public void Start()
@@ -25,27 +26,27 @@ namespace UI
             attackButton.onClick.AddListener(() =>
             {
                 playerStatus.attack.DoAction(player, player.enemyToFight);
-                StartCoroutine(PlayerEndTurn());
+                StartCoroutine(PlayerEndTurn(playerStatus.attack));
             });
 
             defButton.onClick.AddListener(() =>
             {
                 playerStatus.def.DoAction(player, player.enemyToFight);
-                StartCoroutine(PlayerEndTurn());
+                StartCoroutine(PlayerEndTurn(playerStatus.def));
             });
 
             talkButton.onClick.AddListener(() =>
             {
                 playerStatus.talk.DoAction(player, player.enemyToFight);
-                StartCoroutine(PlayerEndTurn());
+                StartCoroutine(PlayerEndTurn(playerStatus.talk));
             });
         }
 
-        private IEnumerator PlayerEndTurn()
+        private IEnumerator PlayerEndTurn(BaseAction baseAction)
         {
             CloseUI();
             BattleHPUI.Instance.SetTurn(false);
-            yield return new WaitForSeconds(0.5f);
+            yield return new WaitForSeconds(baseAction.timeInAction);
             onUseAction.Invoke();
         }
         

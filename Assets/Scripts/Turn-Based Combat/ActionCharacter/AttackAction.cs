@@ -16,7 +16,8 @@ namespace Turn_Based_Combat.ActionCharacter
         {
             other.TakeDamage(damage);
 
-            BattleHPUI.Instance.doingText.SetText($"{self.status.characterName} ต่อย {other.status.characterName}");
+            BattleHPUI.Instance.doingText.SetText(
+                $"{self.status.characterName} ต่อย {other.status.characterName} ไป {damage} ความเสียหาย");
             BattleHPUI.Instance.UpdateHp();
         }
     }

@@ -71,6 +71,7 @@ namespace Turn_Based_Combat.Battle
             cameraBattleRoom.enabled = false;
             BattleHPUI.Instance.CloseUI();
             player.HealAfterBattle();
+            player.useHeal = 0;
 
             WinUI.Instance.OpenUI(player);
         }

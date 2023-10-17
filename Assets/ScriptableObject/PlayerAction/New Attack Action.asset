@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 768ef4d9ecc641ffb36e428d338a3575, type: 3}
   m_Name: New Attack Action
   m_EditorClassIdentifier: 
+  timeInAction: 0.5
   animName: aaaa
   damage: 10
