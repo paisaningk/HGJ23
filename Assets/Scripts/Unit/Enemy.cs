@@ -23,6 +23,7 @@ namespace Unit
         {
             yield return new WaitForSeconds(currentAction.timeInAction);
             action.Invoke();
+            animator.Play("idle");
         }
     }
 }

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc16a0b7abad45df8123bfca17d7e24a, type: 3}
   m_Name: Dog
   m_EditorClassIdentifier: 
-  characterName: "\u0E19\u0E49\u0E2D\u0E07"
+  characterName: "\u0E2B\u0E21\u0E32\u0E42\u0E1B\u0E4B"
   hp: 100
   fear: 100
   enemyType: 0

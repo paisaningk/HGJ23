@@ -16,8 +16,14 @@ public class Movement : MonoBehaviour
         var direction = GetDirection();
         animator.Play(GetDirection() == Vector2.zero ? "PlayerIdle" : "Player_Walk");
 
-        rigidbody2D.gravityScale = direction.x != 0 ? 0.5f : 2f;
-        rigidbody2D.gravityScale = direction.y > 0 ? 0.1f : 2f;
+        if (direction.x != 0 || direction.y > 0)
+        {
+            rigidbody2D.gravityScale = 0.3f;
+        }
+        else
+        {
+            rigidbody2D.gravityScale = 2f;
+        }
 
         sprite.flipX = direction.x switch
         {

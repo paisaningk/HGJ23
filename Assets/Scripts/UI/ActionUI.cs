@@ -45,8 +45,8 @@ namespace UI
         private IEnumerator PlayerEndTurn(BaseAction baseAction)
         {
             CloseUI();
-            BattleHPUI.Instance.SetTurn(false);
             yield return new WaitForSeconds(baseAction.timeInAction);
+            BattleHPUI.Instance.SetTurn(false);
             onUseAction.Invoke();
         }
         

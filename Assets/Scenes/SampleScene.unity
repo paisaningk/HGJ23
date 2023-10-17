@@ -1005,7 +1005,7 @@ MonoBehaviour:
   isDef: 0
   maxUseHeal: 1
   useHeal: 0
-  animator: {fileID: 0}
+  animator: {fileID: 350426992}
   talkUI: {fileID: 665731105628051284}
   currentAction: {fileID: 0}
 --- !u!212 &350426991
@@ -3448,7 +3448,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1288887074}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.1535, y: -0.248, z: 0}
+  m_LocalPosition: {x: -0.2742, y: -0.248, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5008,11 +5008,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1208653973053598375, guid: 7cc26229e3262f24497d97bd6f0af6b3, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -2.91
+      value: -3.778
       objectReference: {fileID: 0}
     - target: {fileID: 1208653973053598375, guid: 7cc26229e3262f24497d97bd6f0af6b3, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 1.24
+      value: 1.253
       objectReference: {fileID: 0}
     - target: {fileID: 1208653973053598375, guid: 7cc26229e3262f24497d97bd6f0af6b3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -5044,7 +5044,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5649986414948937477, guid: 7cc26229e3262f24497d97bd6f0af6b3, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 563.51
+      value: 653.54
       objectReference: {fileID: 0}
     - target: {fileID: 5649986414948937477, guid: 7cc26229e3262f24497d97bd6f0af6b3, type: 3}
       propertyPath: m_SizeDelta.y
@@ -5052,7 +5052,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5649986414948937477, guid: 7cc26229e3262f24497d97bd6f0af6b3, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 508.20837
+      value: 463.1934
       objectReference: {fileID: 0}
     - target: {fileID: 5649986414948937477, guid: 7cc26229e3262f24497d97bd6f0af6b3, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -5068,7 +5068,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8147508756574192267, guid: 7cc26229e3262f24497d97bd6f0af6b3, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 523.51
+      value: 613.54
       objectReference: {fileID: 0}
     - target: {fileID: 8147508756574192267, guid: 7cc26229e3262f24497d97bd6f0af6b3, type: 3}
       propertyPath: m_SizeDelta.y
@@ -5076,7 +5076,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8147508756574192267, guid: 7cc26229e3262f24497d97bd6f0af6b3, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 281.755
+      value: 326.77
       objectReference: {fileID: 0}
     - target: {fileID: 8147508756574192267, guid: 7cc26229e3262f24497d97bd6f0af6b3, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -5250,7 +5250,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -56899764, guid: 9fabef044bddf204ba82baee61241797, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

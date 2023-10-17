@@ -70,7 +70,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: eb47f672f8768c943a1af6779897bfcf, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 682919ccec5aeda4f8836d86fc5fe010, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -203,7 +203,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1213716191634517608}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0.017094873}
   m_LocalScale: {x: 0.005, y: 0.005, z: 1}
   m_ConstrainProportionsScale: 0
@@ -484,7 +484,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: aaaaaaaa
+  m_text: "\u0E42\u0E1A\u0E4B \u0E46\u0E46\u0E46\u0E46\u0E46\u0E46"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5fc4d2e28a93d934ca54298ad9bdfb62, type: 2}
   m_sharedMaterial: {fileID: 5934935999548805725, guid: 5fc4d2e28a93d934ca54298ad9bdfb62, type: 2}

@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeInAction: 3
   animName: Acttack
-  actionText: " <bounce>\u0E01\u0E31\u0E14<bounce>"
+  actionText: " <bounce>\u0E01\u0E31\u0E14</bounce>"
   damage: 30

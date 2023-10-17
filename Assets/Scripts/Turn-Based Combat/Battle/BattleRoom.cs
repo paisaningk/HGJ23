@@ -95,23 +95,33 @@ namespace Turn_Based_Combat.Battle
 
         private void PlayerTurn()
         {
-            if (CheckDead())
+            enemy.transform.DOMove(spawnEnemyPoint.position, 1f).OnComplete((() =>
             {
-                return;
-            }
-            player.ResetDef();
-            BattleHPUI.Instance.SetTurn(true);
-            ActionUI.Instance.OpenUI();
+                if (CheckDead())
+                {
+                    return;
+                }
+
+                player.ResetDef();
+                BattleHPUI.Instance.SetTurn(true);
+                ActionUI.Instance.OpenUI();
+            }));
+            
         }
 
         private void EnemyTurn()
         {
-            if (CheckDead())
+            player.transform.DOMove(spawnPlayerPoint.position, 1f).OnComplete((() =>
             {
-                return;
-            }
-            enemy.ResetDef();
-            enemy.DoSomething(player, PlayerTurn);
+                if (CheckDead())
+                {
+                    return;
+                }
+
+                enemy.animator.Play("idle");
+                enemy.ResetDef();
+                enemy.DoSomething(player, PlayerTurn);
+            }));
         }
     }
 }
