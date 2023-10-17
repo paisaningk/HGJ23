@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f1ca9cc85e154855b9454e551d463fdb, type: 3}
-  m_Name: Player Status
+  m_Name: Player
   m_EditorClassIdentifier: 
   characterName: "\u0E01\u0E35\u0E49 \u0E46"
   hp: 100
@@ -18,4 +18,4 @@ MonoBehaviour:
   attack: {fileID: 11400000, guid: 609d6f9faf0d6bf4c9005eef9b9285a3, type: 2}
   talk: {fileID: 11400000, guid: f60fb5979d64b884383083bd178326b4, type: 2}
   def: {fileID: 11400000, guid: 984b829f25b5f9f4d8a7f3957d0355d5, type: 2}
-  item: []
+  heal: {fileID: 11400000, guid: 689dc7b5c96891142a6f6fbde52ee193, type: 2}

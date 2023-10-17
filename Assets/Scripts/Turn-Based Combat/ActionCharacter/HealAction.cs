@@ -11,16 +11,10 @@ namespace Turn_Based_Combat.ActionCharacter
 
         public override void DoAction(BaseUnit self, BaseUnit other)
         {
-            if (self is Player player)
-            {
-                if (player.CanUseHeal())
-                {
-                    player.Heal(heal);
-                }
-            }
-            
+            self.Heal(heal);
 
             BattleHPUI.Instance.doingText.SetText($"{self.status.characterName} ได้ Heal ตัวเอง {heal} หน่วย");
+            BattleHPUI.Instance.UpdateHp();
         }
     }
 }

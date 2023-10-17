@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 98a2ab3cd8414c3ba7ad815d8a72f91b, type: 3}
-  m_Name: New Talk Action
+  m_Name: Player Talk
   m_EditorClassIdentifier: 
-  timeInAction: 5
+  timeInAction: 3
   talkEnemyList:
   - enemyType: 0
     textInGame:

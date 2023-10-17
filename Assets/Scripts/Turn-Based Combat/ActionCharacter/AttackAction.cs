@@ -14,7 +14,17 @@ namespace Turn_Based_Combat.ActionCharacter
 
         public override void DoAction(BaseUnit self, BaseUnit other)
         {
-            self.transform.DOMove(other.transform.position, 1f).OnComplete((() =>
+            var transformPosition = other.transform.position;
+            if (self is Player)
+            {
+                transformPosition.x -= 3f;
+            }
+            else
+            {
+                transformPosition.x += 3f;
+            }
+
+            self.transform.DOMove(transformPosition, 1f).OnComplete((() =>
             {
                 self.animator.Play("Attack");
                 other.TakeDamage(damage);

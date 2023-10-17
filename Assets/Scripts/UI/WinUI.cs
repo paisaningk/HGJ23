@@ -18,7 +18,7 @@ namespace UI
         public void Start()
         {
             closeUI.onClick.AddListener(CloseUi);
-            closeUI.onClick.AddListener(onCloseUI);
+            // closeUI.onClick.AddListener(onCloseUI);
         }
 
         public void OpenUI(Player player, bool shouldMove = true)

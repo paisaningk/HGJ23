@@ -13,6 +13,10 @@ public class Movement : MonoBehaviour
 
     private void Update()
     {
+        if (!canMove)
+        {
+            return;
+        }
         var direction = GetDirection();
         animator.Play(GetDirection() == Vector2.zero ? "PlayerIdle" : "Player_Walk");
 
@@ -32,10 +36,7 @@ public class Movement : MonoBehaviour
             _ => sprite.flipX
         };
 
-        if (canMove)
-        {
-            Move(direction);
-        }
+        Move(direction);
     }
 
     private void Move(Vector2 direction)

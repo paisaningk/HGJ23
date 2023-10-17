@@ -9,8 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dcca74b64e894259990da2552a1640b1, type: 3}
-  m_Name: New Def Action
+  m_Script: {fileID: 11500000, guid: bda6d43fafc8424c97e1ecfff18b7b92, type: 3}
+  m_Name: Player Heal
   m_EditorClassIdentifier: 
-  timeInAction: 0.5
-  defAnimName: 
+  timeInAction: 1
+  heal: 20

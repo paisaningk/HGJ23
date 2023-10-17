@@ -13,8 +13,13 @@ MonoBehaviour:
   m_Name: Dog
   m_EditorClassIdentifier: 
   characterName: "\u0E2B\u0E21\u0E32\u0E42\u0E1B\u0E4B"
-  hp: 100
+  hp: 40
   fear: 100
   enemyType: 0
   behaviour:
+  - {fileID: 11400000, guid: df3ac176f4b6c6d42b7a6e22a352b8ae, type: 2}
+  - {fileID: 11400000, guid: b7db6e7caf1c46c409fefc7b893d1dda, type: 2}
+  - {fileID: 11400000, guid: 0a4cff455bdf5444491a9505b88102c2, type: 2}
+  - {fileID: 11400000, guid: df3ac176f4b6c6d42b7a6e22a352b8ae, type: 2}
+  - {fileID: 11400000, guid: 0a4cff455bdf5444491a9505b88102c2, type: 2}
   - {fileID: 11400000, guid: df3ac176f4b6c6d42b7a6e22a352b8ae, type: 2}

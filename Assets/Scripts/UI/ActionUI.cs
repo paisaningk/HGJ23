@@ -40,6 +40,12 @@ namespace UI
                 playerStatus.talk.DoAction(player, player.enemyToFight);
                 StartCoroutine(PlayerEndTurn(playerStatus.talk));
             });
+
+            healButton.onClick.AddListener(() =>
+            {
+                playerStatus.heal.DoAction(player, player.enemyToFight);
+                StartCoroutine(PlayerEndTurn(playerStatus.talk));
+            });
         }
 
         private IEnumerator PlayerEndTurn(BaseAction baseAction)
@@ -48,6 +54,12 @@ namespace UI
             yield return new WaitForSeconds(baseAction.timeInAction);
             BattleHPUI.Instance.SetTurn(false);
             onUseAction.Invoke();
+            player.animator.Play("PlayerIdle");
+        }
+
+        public void SetDoingText(string text)
+        {
+            BattleHPUI.Instance.doingText.SetText(text);
         }
         
 

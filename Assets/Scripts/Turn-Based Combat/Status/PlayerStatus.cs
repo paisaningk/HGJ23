@@ -10,6 +10,6 @@ namespace Turn_Based_Combat.Character
         public BaseAction attack;
         public BaseAction talk;
         public BaseAction def;
-        public List<BaseAction> item;
+        public BaseAction heal;
     }
 }

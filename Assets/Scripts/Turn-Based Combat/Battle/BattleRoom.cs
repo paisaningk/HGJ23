@@ -117,8 +117,7 @@ namespace Turn_Based_Combat.Battle
                 {
                     return;
                 }
-
-                enemy.animator.Play("idle");
+                
                 enemy.ResetDef();
                 enemy.DoSomething(player, PlayerTurn);
             }));

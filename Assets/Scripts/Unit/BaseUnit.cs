@@ -1,4 +1,5 @@
 ﻿using System;
+using Sirenix.OdinInspector;
 using Turn_Based_Combat.Character;
 using UI;
 using UnityEngine;
@@ -23,7 +24,7 @@ namespace Unit
 
         public bool CanUseHeal()
         {
-            return useHeal != maxUseHeal;
+            return useHeal > maxUseHeal;
         }
         
         private void OnValidate()
@@ -42,10 +43,12 @@ namespace Unit
             isDef = false;
         }
 
+        [Button]
         public void Heal(int i)
         {
             useHeal++;
             hp += i;
+           
             if (hp > maxHp)
             {
                 hp = maxHp;

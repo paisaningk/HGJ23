@@ -1,5 +1,8 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using TMPro;
+using Turn_Based_Combat.Character;
 using Unit;
 using UnityEngine;
 using UnityEngine.UI;
@@ -18,6 +21,14 @@ namespace UI
         public TMP_Text turnText;
         public Image playerHp;
         public Image enemyHp;
+        public TMP_Text playerHpText;
+        public TMP_Text enemyHpText;
+
+        public VersusImage playerVersusImage;
+        public List<EnemyVersusImage> enemyVersusImage;
+
+        public Image playerVs;
+        public Image enemyVs;
 
         public void Start()
         {
@@ -29,14 +40,25 @@ namespace UI
             this.enemy = enemy;
             panel.SetActive(true);
 
-            playerHp.fillAmount = player.hp / player.maxHp;
-            enemyHp.fillAmount = enemy.hp / enemy.maxHp;
+            UpdateHp();
         }
 
         public void UpdateHp()
         {
             playerHp.fillAmount = player.hp / player.maxHp;
             enemyHp.fillAmount = enemy.hp / enemy.maxHp;
+
+            playerHpText.SetText($"{player.hp} / {player.maxHp}");
+            enemyHpText.SetText($"{enemy.hp} / {enemy.maxHp}");
+
+            playerVs.sprite = player.isDead ? playerVersusImage.die : playerVersusImage.alive;
+            var status = (EnemyStatus)enemy.status;
+            var versusImage = enemyVersusImage.FirstOrDefault(T => T.enemyType == status.enemyType);
+
+            if (versusImage != null)
+            {
+                enemyVs.sprite = enemy.isDead ? versusImage.versusImage.die : versusImage.versusImage.alive;
+            }
         }
 
         public void SetTurn(bool isPlayerTurn)
@@ -50,4 +72,19 @@ namespace UI
             panel.SetActive(false);
         }
     }
+}
+
+[Serializable]
+public class EnemyVersusImage
+{
+    public EnemyType enemyType;
+    public VersusImage versusImage;
+}
+
+
+[Serializable]
+public class VersusImage
+{
+    public Sprite alive;
+    public Sprite die;
 }
