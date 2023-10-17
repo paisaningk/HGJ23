@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 728bcf55aff158440808d553c39c62bb
+guid: ca8ffd42b58a0d544a883ff9a9a78cfb
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Kid_idle_0
+      name: Kid_idle_lose_run_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 227
-        width: 266
-        height: 227
+        y: 708
+        width: 286
+        height: 236
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,20 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 893acfcddb397e84bbbd026fc076dedd
-      internalID: 1785005886
+      spriteID: 3232593059065b4429b0ea258e441d7b
+      internalID: 216122160
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kid_idle_1
+      name: Kid_idle_lose_run_1
       rect:
         serializedVersion: 2
-        x: 266
-        y: 227
-        width: 266
-        height: 227
+        x: 286
+        y: 708
+        width: 286
+        height: 236
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,20 +145,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 75bf1b6590efd4144abd4bc0cdce1249
-      internalID: -1965536614
+      spriteID: f72fa541da4858e45be0f7e591f08710
+      internalID: 165291086
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kid_idle_2
+      name: Kid_idle_lose_run_2
       rect:
         serializedVersion: 2
-        x: 532
-        y: 227
-        width: 266
-        height: 227
+        x: 572
+        y: 708
+        width: 286
+        height: 236
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,20 +166,146 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2df6719b71f97f544a4049a9773cf75f
-      internalID: 1134758510
+      spriteID: 397e17a64a7295f40ba2f6f04c0fadde
+      internalID: 576584991
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kid_idle_3
+      name: Kid_idle_lose_run_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 472
+        width: 286
+        height: 236
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5a1f2092b07bd54db1ade06b7c154db
+      internalID: -2077969935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kid_idle_lose_run_4
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 472
+        width: 286
+        height: 236
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c1979569f91a2a41bebd3369095dc90
+      internalID: -1144505477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kid_idle_lose_run_5
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 472
+        width: 286
+        height: 236
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a70d2707ae1e874297e2211e2bf17ec
+      internalID: 102673918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kid_idle_lose_run_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 236
+        width: 286
+        height: 236
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f761649a6a0fd104498d295aca338160
+      internalID: 1245458349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kid_idle_lose_run_7
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 236
+        width: 286
+        height: 236
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1aad1d9f2a93c8741b7dbdfc174b4c5d
+      internalID: 358007099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kid_idle_lose_run_8
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 236
+        width: 286
+        height: 236
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc5d68659ca736b46aa75c82c4967fa9
+      internalID: -773219708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kid_idle_lose_run_9
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 266
-        height: 227
+        width: 286
+        height: 236
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -187,20 +313,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1bcc7585e0323de42b7b51e89b177277
-      internalID: -1704890728
+      spriteID: f9e7ed31a7264ab499f6080156f98d4e
+      internalID: 318702393
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kid_idle_4
+      name: Kid_idle_lose_run_10
       rect:
         serializedVersion: 2
-        x: 266
+        x: 286
         y: 0
-        width: 266
-        height: 227
+        width: 286
+        height: 236
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -208,20 +334,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bfc30b7e26a69ee4bbea68ce8b4cda6f
-      internalID: -1521946078
+      spriteID: 1c9baa74fa7458a4ca251a2635010305
+      internalID: 1618295437
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kid_idle_5
+      name: Kid_idle_lose_run_11
       rect:
         serializedVersion: 2
-        x: 532
+        x: 572
         y: 0
-        width: 266
-        height: 227
+        width: 286
+        height: 236
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -229,8 +355,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ee6615fd9852069419bf41a1a1112930
-      internalID: 167439104
+      spriteID: a531c30fb024fc44ea9dde46e5c697a9
+      internalID: 1958394929
       vertices: []
       indices: 
       edges: []
@@ -246,12 +372,18 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Kid_idle_0: 1785005886
-      Kid_idle_1: -1965536614
-      Kid_idle_2: 1134758510
-      Kid_idle_3: -1704890728
-      Kid_idle_4: -1521946078
-      Kid_idle_5: 167439104
+      Kid_idle_lose_run_0: 216122160
+      Kid_idle_lose_run_1: 165291086
+      Kid_idle_lose_run_10: 1618295437
+      Kid_idle_lose_run_11: 1958394929
+      Kid_idle_lose_run_2: 576584991
+      Kid_idle_lose_run_3: -2077969935
+      Kid_idle_lose_run_4: -1144505477
+      Kid_idle_lose_run_5: 102673918
+      Kid_idle_lose_run_6: 1245458349
+      Kid_idle_lose_run_7: 358007099
+      Kid_idle_lose_run_8: -773219708
+      Kid_idle_lose_run_9: 318702393
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
