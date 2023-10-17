@@ -1,9 +1,8 @@
-﻿using System;
+﻿using System.Collections;
 using Turn_Based_Combat.Character;
 using Unit;
 using UnityEngine;
 using UnityEngine.Events;
-using UnityEngine.Rendering;
 using UnityEngine.UI;
 using Utility;
 
@@ -26,21 +25,30 @@ namespace UI
             attackButton.onClick.AddListener(() =>
             {
                 playerStatus.attack.DoAction(player, player.enemyToFight);
-                onUseAction.Invoke();
+                StartCoroutine(PlayerEndTurn());
             });
 
             defButton.onClick.AddListener(() =>
             {
                 playerStatus.def.DoAction(player, player.enemyToFight);
-                onUseAction.Invoke();
+                StartCoroutine(PlayerEndTurn());
             });
 
             talkButton.onClick.AddListener(() =>
             {
                 playerStatus.talk.DoAction(player, player.enemyToFight);
-                onUseAction.Invoke();
+                StartCoroutine(PlayerEndTurn());
             });
         }
+
+        private IEnumerator PlayerEndTurn()
+        {
+            CloseUI();
+            BattleHPUI.Instance.SetTurn(false);
+            yield return new WaitForSeconds(0.5f);
+            onUseAction.Invoke();
+        }
+        
 
         public void OpenUI()
         {

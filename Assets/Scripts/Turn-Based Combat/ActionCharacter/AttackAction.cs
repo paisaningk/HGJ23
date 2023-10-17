@@ -1,6 +1,7 @@
 ﻿using Turn_Based_Combat.Character;
 using UI;
 using Unit;
+using UnityEditor;
 using UnityEngine;
 
 namespace Turn_Based_Combat.ActionCharacter
@@ -14,9 +15,8 @@ namespace Turn_Based_Combat.ActionCharacter
         public override void DoAction(BaseUnit self, BaseUnit other)
         {
             other.TakeDamage(damage);
-            // other.animator.Play(animName);
-            Debug.Log(name);
 
+            BattleHPUI.Instance.doingText.SetText($"{self.status.characterName} ต่อย {other.status.characterName}");
             BattleHPUI.Instance.UpdateHp();
         }
     }

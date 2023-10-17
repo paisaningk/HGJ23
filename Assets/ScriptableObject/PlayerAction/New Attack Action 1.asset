@@ -9,12 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bc16a0b7abad45df8123bfca17d7e24a, type: 3}
-  m_Name: Enemy Status
+  m_Script: {fileID: 11500000, guid: 768ef4d9ecc641ffb36e428d338a3575, type: 3}
+  m_Name: New Attack Action 1
   m_EditorClassIdentifier: 
-  characterName: "\u0E2B\u0E25\u0E27\u0E07\u0E1E\u0E48\u0E2D"
-  hp: 100
-  fear: 100
-  enemyType: 0
-  behaviour:
-  - {fileID: 11400000, guid: 609d6f9faf0d6bf4c9005eef9b9285a3, type: 2}
+  animName: aaaa
+  damage: 20

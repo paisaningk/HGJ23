@@ -14,6 +14,7 @@ namespace UI
 
         public GameObject panel;
 
+        public TMP_Text doingText;
         public TMP_Text turnText;
         public Image playerHp;
         public Image enemyHp;
@@ -40,7 +41,8 @@ namespace UI
 
         public void SetTurn(bool isPlayerTurn)
         {
-            turnText.SetText(isPlayerTurn ? "Player Turn" : "Enemy Turn");
+            turnText.SetText(
+                isPlayerTurn ? $"ตาของ {player.status.characterName}" : $"ตาของ {enemy.status.characterName} ");
         }
 
         public void CloseUI()

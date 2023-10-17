@@ -4,6 +4,7 @@ using DG.Tweening;
 using UI;
 using Unit;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace Turn_Based_Combat.Battle
 {
@@ -17,7 +18,6 @@ namespace Turn_Based_Combat.Battle
         public Transform spawnEnemyPoint;
 
         [Header("For Debug")] public bool isBattle;
-        public GameState gameState;
 
         public CinemachineVirtualCamera cameraBattleRoom;
 
@@ -31,8 +31,7 @@ namespace Turn_Based_Combat.Battle
             if (!col.CompareTag("Player")) return;
             if (enemy.isDead) return;
             if (isBattle) return;
-
-            gameState = GameState.Start;
+            
             isBattle = true;
 
             if (col.TryGetComponent(out Player component))
@@ -58,6 +57,7 @@ namespace Turn_Based_Combat.Battle
 
             ActionUI.Instance.OpenUI();
             ActionUI.Instance.onUseAction += EnemyTurn;
+            
 
             BattleHPUI.Instance.OpenUI(enemy);
 
@@ -66,33 +66,51 @@ namespace Turn_Based_Combat.Battle
 
         private void CloseBattleRoom()
         {
+            ActionUI.Instance.CloseUI();
             ActionUI.Instance.onUseAction = null;
+            cameraBattleRoom.enabled = false;
+            BattleHPUI.Instance.CloseUI();
+            player.HealAfterBattle();
+
+            WinUI.Instance.OpenUI(player);
+        }
+
+        private bool CheckDead()
+        {
+            if (player.isDead)
+            {
+                SceneManager.LoadScene("SampleScene");
+                return true;
+            }
+
+            if (enemy.isDead)
+            {
+                CloseBattleRoom();
+                return true;
+            }
+
+            return false;
         }
 
         private void PlayerTurn()
         {
+            if (CheckDead())
+            {
+                return;
+            }
             player.ResetDef();
             BattleHPUI.Instance.SetTurn(true);
             ActionUI.Instance.OpenUI();
-
-            Debug.Log("Player");
-        }
-
-        private void PlayerAttack()
-        {
-            player.ResetDef();
         }
 
         private void EnemyTurn()
         {
-            BattleHPUI.Instance.SetTurn(false);
-
+            if (CheckDead())
+            {
+                return;
+            }
             enemy.ResetDef();
             enemy.DoSomething(player, PlayerTurn);
-
-            ActionUI.Instance.CloseUI();
-
-            Debug.Log("Enemy Player");
         }
     }
 }

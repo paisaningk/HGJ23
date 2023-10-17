@@ -1,4 +1,5 @@
-﻿using Unit;
+﻿using UI;
+using Unit;
 using UnityEngine;
 
 namespace Turn_Based_Combat.ActionCharacter
@@ -7,7 +8,7 @@ namespace Turn_Based_Combat.ActionCharacter
     {
         public override void DoAction(BaseUnit self, BaseUnit other)
         {
-            Debug.Log(name);
+            BattleHPUI.Instance.doingText.SetText($"{self.status.characterName} ใช้สิ่งของ");
         }
     }
 }

@@ -12,15 +12,13 @@ namespace Unit
             var enemyStatus = (EnemyStatus)status;
             enemyStatus.behaviour[0].DoAction(this, player);
 
-            Debug.Log("adc");
-
             StartCoroutine(EnemyTurnEnd(action));
         }
 
 
         private IEnumerator EnemyTurnEnd(UnityAction action)
         {
-            yield return new WaitForSeconds(1f);
+            yield return new WaitForSeconds(0.3f);
             action.Invoke();
         }
     }

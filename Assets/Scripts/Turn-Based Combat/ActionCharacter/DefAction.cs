@@ -1,4 +1,5 @@
-﻿using Unit;
+﻿using UI;
+using Unit;
 using UnityEngine;
 
 namespace Turn_Based_Combat.ActionCharacter
@@ -12,7 +13,8 @@ namespace Turn_Based_Combat.ActionCharacter
         {
             self.isDef = true;
             self.animator.Play(defAnimName);
-            Debug.Log(name);
+
+            BattleHPUI.Instance.doingText.SetText($"{self.status.characterName} ป้องกัน");
         }
     }
 }

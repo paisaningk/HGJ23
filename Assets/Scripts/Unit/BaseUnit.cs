@@ -35,6 +35,21 @@ namespace Unit
             isDef = false;
         }
 
+        public void Heal(int i)
+        {
+            hp += i;
+            if (hp > maxHp)
+            {
+                hp = maxHp;
+            }
+        }
+
+        public void HealAfterBattle()
+        {
+            hp = maxHp;
+            fear = 0;
+        }
+
         /// <summary>
         /// Return is Dead
         /// </summary>
