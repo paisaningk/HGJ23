@@ -94,3 +94,7 @@ crashlytics-build.properties
 # Datasource local storage ignored files
 /dataSources/
 /dataSources.local.xml
+Assets/Plugins/Febucci/Text Animator/Integrations/Visual Scripting - Integration.unitypackage.meta
+Assets/ConsolePro/Remote/LiteNetLib/LiteNetLib.csproj.meta
+Assets/Plugins/Febucci/Text Animator/Extra/Typewriter Sound - Package.unitypackage.meta
+Assets/Plugins/Febucci/Text Animator/Integrations/PlayMaker - Integration.unitypackage.meta

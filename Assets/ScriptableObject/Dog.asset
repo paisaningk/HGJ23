@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bc16a0b7abad45df8123bfca17d7e24a, type: 3}
-  m_Name: Enemy Status
+  m_Name: Dog
   m_EditorClassIdentifier: 
-  characterName: "\u0E2B\u0E25\u0E27\u0E07\u0E1E\u0E48\u0E2D"
+  characterName: "\u0E19\u0E49\u0E2D\u0E07"
   hp: 100
   fear: 100
   enemyType: 0
   behaviour:
-  - {fileID: 11400000, guid: 609d6f9faf0d6bf4c9005eef9b9285a3, type: 2}
+  - {fileID: 11400000, guid: df3ac176f4b6c6d42b7a6e22a352b8ae, type: 2}

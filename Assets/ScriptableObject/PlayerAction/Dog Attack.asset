@@ -9,11 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bc16a0b7abad45df8123bfca17d7e24a, type: 3}
-  m_Name: Enemy Status 1
+  m_Script: {fileID: 11500000, guid: 768ef4d9ecc641ffb36e428d338a3575, type: 3}
+  m_Name: Dog Attack
   m_EditorClassIdentifier: 
-  characterName: 
-  hp: 0
-  fear: 0
-  enemyType: 0
-  behaviour: []
+  timeInAction: 3
+  animName: Acttack
+  actionText: " <bounce>\u0E01\u0E31\u0E14<bounce>"
+  damage: 30

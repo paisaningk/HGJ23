@@ -15,7 +15,7 @@ MonoBehaviour:
   characterName: "\u0E01\u0E35\u0E49 \u0E46"
   hp: 100
   fear: 100
-  attack: {fileID: 11400000, guid: df3ac176f4b6c6d42b7a6e22a352b8ae, type: 2}
+  attack: {fileID: 11400000, guid: 609d6f9faf0d6bf4c9005eef9b9285a3, type: 2}
   talk: {fileID: 11400000, guid: f60fb5979d64b884383083bd178326b4, type: 2}
   def: {fileID: 11400000, guid: 984b829f25b5f9f4d8a7f3957d0355d5, type: 2}
   item: []
