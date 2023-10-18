@@ -12,6 +12,9 @@ namespace Unit
     {
         public new Rigidbody2D rigidbody2D;
         public BaseAction currentAction;
+        public bool haveStateTwo;
+        public bool isStateTwo;
+        public bool changAnim;
 
         private void Update()
         {
@@ -20,6 +23,20 @@ namespace Unit
                 animator.Play("Die");
                 rigidbody2D.simulated = true;
             }
+        }
+
+        public override void TakeDamage(int damage)
+        {
+            base.TakeDamage(damage);
+            var enemyStatus = (EnemyStatus)status;
+            if (hp <= enemyStatus.hpEnterStateTwo)
+            {
+                isStateTwo = true;
+            }
+
+            if (!haveStateTwo || !isStateTwo || changAnim) return;
+            changAnim = true;
+            animator.Play("idle2");
         }
 
         public void DoSomething(BaseUnit player, UnityAction action = null)

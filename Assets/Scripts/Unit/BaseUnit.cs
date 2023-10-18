@@ -83,7 +83,7 @@ namespace Unit
         /// </summary>
         /// <param name="damage"></param>
         /// <returns></returns>
-        public bool TakeDamage(int damage)
+        public virtual void TakeDamage(int damage)
         {
             if (isDef)
             {
@@ -98,8 +98,6 @@ namespace Unit
             {
                 isDead = true;
             }
-
-            return hp <= 0;
         }
 
         public void TakeFear(int damage)

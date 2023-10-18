@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc16a0b7abad45df8123bfca17d7e24a, type: 3}
   m_Name: KId
   m_EditorClassIdentifier: 
-  characterName: "\u0E2B\u0E21\u0E32\u0E42\u0E1B\u0E4B"
+  characterName: "\u0E40\u0E14\u0E47\u0E01\u0E19\u0E49\u0E2D\u0E22"
   hp: 100
   fear: 100
   enemyType: 1
@@ -20,3 +20,4 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 9cd1462be1a69784c8c6488947783b7f, type: 2}
   - {fileID: 11400000, guid: dd5d011245e1d014c9d4bee81ca13de2, type: 2}
   - {fileID: 11400000, guid: 68b93b9394c08a44384092cd3821fa58, type: 2}
+  hpEnterStateTwo: 0

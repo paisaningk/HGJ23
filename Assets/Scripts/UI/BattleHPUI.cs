@@ -68,6 +68,7 @@ namespace UI
             {
                 attackEnemy.SetActive(true);
                 enemyAttackImage.sprite = sprite;
+                enemyAttackImage.SetNativeSize();
                 enemyCanvas.alpha = 1;
                 StartCoroutine(CloseAttack(attackEnemy));
             }
@@ -75,7 +76,7 @@ namespace UI
 
         private IEnumerator CloseAttack(GameObject close)
         {
-            yield return new WaitForSecondsRealtime(0.45f);
+            yield return new WaitForSecondsRealtime(1.1f);
             close.SetActive(false);
         }
         

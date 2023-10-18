@@ -9,5 +9,7 @@ namespace Turn_Based_Combat.Character
     {
         public EnemyType enemyType;
         public List<BaseAction> behaviour;
+
+        public int hpEnterStateTwo;
     }
 }

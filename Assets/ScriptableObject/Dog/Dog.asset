@@ -23,3 +23,4 @@ MonoBehaviour:
   - {fileID: 11400000, guid: df3ac176f4b6c6d42b7a6e22a352b8ae, type: 2}
   - {fileID: 11400000, guid: 0a4cff455bdf5444491a9505b88102c2, type: 2}
   - {fileID: 11400000, guid: df3ac176f4b6c6d42b7a6e22a352b8ae, type: 2}
+  hpEnterStateTwo: 20

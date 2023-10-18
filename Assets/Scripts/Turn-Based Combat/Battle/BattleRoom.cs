@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using Cinemachine;
 using DG.Tweening;
 using UI;
@@ -20,6 +21,7 @@ namespace Turn_Based_Combat.Battle
         [Header("For Debug")] public bool isBattle;
 
         public CinemachineVirtualCamera cameraBattleRoom;
+        public bool isSetupEnemy;
 
         public void OnValidate()
         {
@@ -58,9 +60,12 @@ namespace Turn_Based_Combat.Battle
             player.movement.sprite.flipX = false;
             
             ActionUI.Instance.onUseAction += EnemyTurn;
-            
-
             BattleHPUI.Instance.OpenUI(enemy);
+
+            if (isSetupEnemy)
+            {
+                StartCoroutine(PlayAnimator());
+            }
 
             PlayerTurn();
         }
@@ -110,6 +115,11 @@ namespace Turn_Based_Combat.Battle
             
         }
 
+        private IEnumerator PlayAnimator()
+        {
+            yield return new WaitForSecondsRealtime(1f);
+            enemy.animator.Play("infight_1");
+        }
         private void EnemyTurn()
         {
             player.transform.DOMove(spawnPlayerPoint.position, 1f).OnComplete((() =>
