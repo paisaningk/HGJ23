@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Manager;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class Movement : MonoBehaviour
 {
@@ -10,15 +11,25 @@ public class Movement : MonoBehaviour
     public new Rigidbody2D rigidbody2D;
     public Animator animator;
     public SpriteRenderer sprite;
+    public LayerMask layerMask;
 
     private void Update()
     {
+        Debug.Log(EventSystem.current.IsPointerOverGameObject());
         if (!canMove)
         {
             return;
         }
         var direction = GetDirection();
-        animator.Play(GetDirection() == Vector2.zero ? "PlayerIdle" : "Player_Walk");
+        if (!IsGrounded() && GetDirection() == Vector2.zero)
+        {
+            animator.Play("Player_Fall");
+        }
+        else
+        {
+            animator.Play(GetDirection() == Vector2.zero ? "PlayerIdle" : "Player_Walk");
+        }
+       
 
         if (direction.x != 0 || direction.y > 0)
         {
@@ -52,6 +63,16 @@ public class Movement : MonoBehaviour
     public void SetCanMove(bool move)
     {
         canMove = move;
+    }
+
+    private bool IsGrounded()
+    {
+        if (Physics2D.Raycast(transform.position, Vector3.down, 1f, layerMask))
+        {
+            return true;
+        }
+
+        return false;
     }
 
     public void StartMove()

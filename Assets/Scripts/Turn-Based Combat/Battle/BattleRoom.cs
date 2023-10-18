@@ -86,7 +86,7 @@ namespace Turn_Based_Combat.Battle
         {
             if (player.isDead)
             {
-                SceneManager.LoadScene("SampleScene");
+                WinUI.Instance.losePanel.SetActive(true);
                 return true;
             }
 

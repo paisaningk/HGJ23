@@ -3,6 +3,7 @@ using Turn_Based_Combat.Character;
 using Unit;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using Utility;
 
@@ -21,15 +22,21 @@ namespace UI
         public Button endButton;
         public Button endOpening;
 
+        public GameObject losePanel;
+        public Button restart;
+
         public void Start()
         {
             endButton.onClick.AddListener(() => OpenUI(player));
             closeUI.onClick.AddListener(CloseUi);
             endOpening.onClick.AddListener((() =>
             {
-                CloseUi();
+                endBattleGameObject.SetActive(false);
                 endOpening.gameObject.SetActive(false);
+                player.movement.StartMove();
             }));
+
+            restart.onClick.AddListener((() => SceneManager.LoadScene("SampleScene")));
             // closeUI.onClick.AddListener(onCloseUI);
         }
 

@@ -7,15 +7,20 @@ namespace Interaction
     public class TwinGhost : BaseInteraction
     {
         public Animator animator;
+        public bool isInteraction;
 
         public override void Interaction()
         {
-            WinUI.Instance.OpenTwinCutscenes();
-            WinUI.Instance.onCloseUI += (() =>
+            if (!isInteraction)
             {
-                animator.Play("fade");
-                StartCoroutine(Close());
-            });
+                WinUI.Instance.OpenTwinCutscenes();
+                WinUI.Instance.onCloseUI += (() =>
+                {
+                    animator.Play("fade");
+                    StartCoroutine(Close());
+                });
+                isInteraction = true;
+            }
         }
 
 
