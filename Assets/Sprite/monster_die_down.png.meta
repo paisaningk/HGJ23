@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 00059f2912f38bb4b8ccffc922391306
+guid: fc27a174ca322b54c9f1f2fa0197ba7f
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,7 +110,49 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: monster_die_0
+      name: monster_die_down_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 177
+        width: 212
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ceb9917d3278276479f60f9c7b0ad34b
+      internalID: 860333251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster_die_down_1
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 177
+        width: 212
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c9efe4f040356a489b96a26b3747a6e
+      internalID: -993140154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster_die_down_2
       rect:
         serializedVersion: 2
         x: 0
@@ -124,14 +166,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 24c84821a81373b458c8644eb65c99e1
-      internalID: 710948090
+      spriteID: 8f95bbb1bcf170a428c48d9e13b6b113
+      internalID: -76172544
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: monster_die_1
+      name: monster_die_down_3
       rect:
         serializedVersion: 2
         x: 212
@@ -145,8 +187,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: adff08c632bc8d643ac6a6948d75d5fe
-      internalID: 801426718
+      spriteID: 5e7aa3b75b0fba94c83f4a373eaf9891
+      internalID: 335498891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: monster_die_down_4
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 0
+        width: 212
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1727204f79056e54caea75e28c31aaff
+      internalID: 398036094
       vertices: []
       indices: 
       edges: []
@@ -162,8 +225,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      monster_die_0: 710948090
-      monster_die_1: 801426718
+      monster_die_down_0: 860333251
+      monster_die_down_1: -993140154
+      monster_die_down_2: -76172544
+      monster_die_down_3: 335498891
+      monster_die_down_4: 398036094
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
