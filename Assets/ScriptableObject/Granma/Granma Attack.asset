@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 768ef4d9ecc641ffb36e428d338a3575, type: 3}
+  m_Name: Granma Attack
+  m_EditorClassIdentifier: 
+  timeInAction: 2
+  attackSprite: {fileID: 21300000, guid: fa611448eb6ef244fa8f1b3ed9026675, type: 3}
+  attackSprite2: {fileID: 21300000, guid: 078d625c81ff8fd46834ac19987f87b9, type: 3}
+  actionText: "<bounce>\u0E43\u0E0A\u0E49\u0E1E\u0E25\u0E31\u0E07\u0E28\u0E31\u0E01\u0E14\u0E34\u0E4C\u0E2A\u0E34\u0E17\u0E18\u0E34\u0E4C</bounce>"
+  action2Text: "<bounce>\u0E43\u0E0A\u0E49\u0E1B\u0E37\u0E19\u0E22\u0E34\u0E07</bounce>"
+  damage: 20

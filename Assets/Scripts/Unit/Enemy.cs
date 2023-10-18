@@ -36,7 +36,7 @@ namespace Unit
 
             if (!haveStateTwo || !isStateTwo || changAnim) return;
             changAnim = true;
-            animator.Play("muscle_to_gun");
+            animator.Play(enemyStatus.enemyType == EnemyType.Father ? "muscle_to_gun" : "idle2");
         }
 
         public void DoSomething(BaseUnit player, UnityAction action = null)
