@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using Sirenix.OdinInspector;
 using Turn_Based_Combat.Character;
 using UI;
@@ -21,6 +22,13 @@ namespace Unit
         
         public Animator animator;
         public TalkUI talkUI;
+
+        public GameObject healVfx;
+
+        public void Start()
+        {
+            healVfx.SetActive(false);
+        }
 
         public bool CanUseHeal()
         {
@@ -48,11 +56,20 @@ namespace Unit
         {
             useHeal++;
             hp += i;
+            healVfx.SetActive(true);
            
             if (hp > maxHp)
             {
                 hp = maxHp;
             }
+
+            StartCoroutine(CloseHealVFX());
+        }
+
+        private IEnumerator CloseHealVFX()
+        {
+            yield return new WaitForSeconds(2f);
+            healVfx.SetActive(false);
         }
 
         public void HealAfterBattle()
