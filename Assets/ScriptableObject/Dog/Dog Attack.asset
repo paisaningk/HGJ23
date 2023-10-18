@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: Dog Attack
   m_EditorClassIdentifier: 
   timeInAction: 2
+  attackSprite: {fileID: 21300000, guid: 03d089767ebe81c42bc33b54aea53cca, type: 3}
   actionText: " <bounce>\u0E01\u0E31\u0E14</bounce>"
   damage: 30

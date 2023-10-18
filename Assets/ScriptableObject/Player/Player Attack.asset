@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: Player Attack
   m_EditorClassIdentifier: 
   timeInAction: 2
+  attackSprite: {fileID: 21300000, guid: b4a6c719520fc9b4f818523d689373ea, type: 3}
   actionText: "\u0E04\u0E48\u0E2D\u0E22"
   damage: 10

@@ -55,6 +55,7 @@ namespace Turn_Based_Combat.Battle
             cameraBattleRoom.enabled = true;
             player.enemyToFight = enemy;
             player.animator.Play("PlayerIdle");
+            player.movement.sprite.flipX = false;
 
             ActionUI.Instance.OpenUI();
             ActionUI.Instance.onUseAction += EnemyTurn;

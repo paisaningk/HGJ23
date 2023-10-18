@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using TMPro;
@@ -30,9 +31,20 @@ namespace UI
         public Image playerVs;
         public Image enemyVs;
 
+        public GameObject attackPlayer;
+        public GameObject attackEnemy;
+
+        public CanvasGroup playerCanvas;
+        public CanvasGroup enemyCanvas;
+
+        public Image playerAttackImage;
+        public Image enemyAttackImage;
+
         public void Start()
         {
             panel.SetActive(false);
+            attackPlayer.SetActive(false);
+            attackEnemy.SetActive(false);
         }
 
         public void OpenUI(Enemy enemy)
@@ -42,6 +54,32 @@ namespace UI
 
             UpdateHp();
         }
+
+        public void ShowAttack(bool isPlayer, Sprite sprite)
+        {
+            if (isPlayer)
+            {
+                attackPlayer.SetActive(true);
+                playerAttackImage.sprite = sprite;
+                playerCanvas.alpha = 1;
+                StartCoroutine(CloseAttack(attackPlayer));
+            }
+            else
+            {
+                attackEnemy.SetActive(true);
+                enemyAttackImage.sprite = sprite;
+                enemyCanvas.alpha = 1;
+                StartCoroutine(CloseAttack(attackEnemy));
+            }
+        }
+
+        private IEnumerator CloseAttack(GameObject close)
+        {
+            yield return new WaitForSecondsRealtime(0.45f);
+            close.SetActive(false);
+        }
+        
+        
 
         public void UpdateHp()
         {
