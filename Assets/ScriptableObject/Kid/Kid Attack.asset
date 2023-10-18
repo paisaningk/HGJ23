@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 768ef4d9ecc641ffb36e428d338a3575, type: 3}
-  m_Name: Player Attack
+  m_Name: Kid Attack
   m_EditorClassIdentifier: 
   timeInAction: 2
-  attackSprite: {fileID: 21300000, guid: b4a6c719520fc9b4f818523d689373ea, type: 3}
-  actionText: "\u0E04\u0E48\u0E2D\u0E22"
-  damage: 20
+  attackSprite: {fileID: 21300000, guid: 36972b9c923c70a4e85afb46f4382cad, type: 3}
+  actionText: " <bounce>\u0E01\u0E31\u0E14</bounce>"
+  damage: 30

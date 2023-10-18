@@ -9,10 +9,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 768ef4d9ecc641ffb36e428d338a3575, type: 3}
-  m_Name: Player Attack
+  m_Script: {fileID: 11500000, guid: 26267ef840a944f5b153e1729b4e86a3, type: 3}
+  m_Name: Kid Talk
   m_EditorClassIdentifier: 
   timeInAction: 2
-  attackSprite: {fileID: 21300000, guid: b4a6c719520fc9b4f818523d689373ea, type: 3}
-  actionText: "\u0E04\u0E48\u0E2D\u0E22"
-  damage: 20
+  talks:
+  - enemyTalk:
+      th: "\u0E15\u0E31\u0E27\u0E44\u0E23\u0E27\u0E30"
+      eng: 
+    playerReaction:
+      th: "\u0E41\u0E1A \u0E41\u0E1A \u0E41\u0E1A"
+      eng: 

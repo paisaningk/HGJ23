@@ -56,8 +56,7 @@ namespace Turn_Based_Combat.Battle
             player.enemyToFight = enemy;
             player.animator.Play("PlayerIdle");
             player.movement.sprite.flipX = false;
-
-            ActionUI.Instance.OpenUI();
+            
             ActionUI.Instance.onUseAction += EnemyTurn;
             
 
@@ -75,7 +74,7 @@ namespace Turn_Based_Combat.Battle
             player.HealAfterBattle();
             player.useHeal = 0;
 
-            WinUI.Instance.OpenUI(player);
+            WinUI.Instance.OpenEndBattle(enemy, player);
         }
 
         private bool CheckDead()

@@ -22,6 +22,14 @@ MonoBehaviour:
       eng: 
     - th: "<shake>\u0E1A\u0E39 \u0E1A\u0E39 \u0E1A\u0E39"
       eng: 
+  - enemyType: 1
+    textInGame:
+    - th: 
+      eng: 
+    - th: 
+      eng: 
+    - th: 
+      eng: 
   vfxText:
   - <wiggle>
   - <rainb>

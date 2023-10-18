@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc16a0b7abad45df8123bfca17d7e24a, type: 3}
+  m_Name: KId
+  m_EditorClassIdentifier: 
+  characterName: "\u0E2B\u0E21\u0E32\u0E42\u0E1B\u0E4B"
+  hp: 100
+  fear: 100
+  enemyType: 1
+  behaviour:
+  - {fileID: 11400000, guid: 9cd1462be1a69784c8c6488947783b7f, type: 2}
+  - {fileID: 11400000, guid: dd5d011245e1d014c9d4bee81ca13de2, type: 2}
+  - {fileID: 11400000, guid: 68b93b9394c08a44384092cd3821fa58, type: 2}
