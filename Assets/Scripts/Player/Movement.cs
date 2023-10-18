@@ -15,7 +15,6 @@ public class Movement : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log(EventSystem.current.IsPointerOverGameObject());
         if (!canMove)
         {
             return;
