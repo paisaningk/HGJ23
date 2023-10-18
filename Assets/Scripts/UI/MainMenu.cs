@@ -17,7 +17,7 @@ namespace UI
 
         public void StarGame()
         {
-            gameObject.SetActive(false);
+            WinUI.Instance.endOpening.onClick.AddListener((() => gameObject.SetActive(false)));
             WinUI.Instance.OpenCutSceneOpening();
         }
 

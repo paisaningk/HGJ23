@@ -17,4 +17,4 @@ MonoBehaviour:
   attackSprite2: {fileID: 0}
   actionText: "\u0E04\u0E48\u0E2D\u0E22"
   action2Text: 
-  damage: 10
+  damage: 100

@@ -19,11 +19,17 @@ namespace UI
         public GameObject endBattleGameObject;
         public Animator animator;
         public Button endButton;
+        public Button endOpening;
 
         public void Start()
         {
             endButton.onClick.AddListener(() => OpenUI(player));
             closeUI.onClick.AddListener(CloseUi);
+            endOpening.onClick.AddListener((() =>
+            {
+                CloseUi();
+                endOpening.gameObject.SetActive(false);
+            }));
             // closeUI.onClick.AddListener(onCloseUI);
         }
 

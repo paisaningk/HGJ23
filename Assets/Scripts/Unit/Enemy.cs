@@ -36,7 +36,7 @@ namespace Unit
 
             if (!haveStateTwo || !isStateTwo || changAnim) return;
             changAnim = true;
-            animator.Play("idle2");
+            animator.Play("muscle_to_gun");
         }
 
         public void DoSomething(BaseUnit player, UnityAction action = null)
