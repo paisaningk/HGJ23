@@ -2,6 +2,7 @@
 using System.Collections;
 using Cinemachine;
 using DG.Tweening;
+using Turn_Based_Combat.Character;
 using UI;
 using Unit;
 using UnityEngine;
@@ -80,6 +81,27 @@ namespace Turn_Based_Combat.Battle
             player.useHeal = 0;
 
             WinUI.Instance.OpenEndBattle(enemy, player);
+
+            var enemyStatus = (EnemyStatus)enemy.status;
+
+            switch (enemyStatus.enemyType)
+            {
+                case EnemyType.Dog:
+                    WinUI.Instance.textWin = "คุณหลอกหมาได้แล้ว เก่งมาก";
+                    break;
+                case EnemyType.YoungChild:
+                    WinUI.Instance.textWin = "ไอ้เด็กนี้ โดนเราหลอกคืนแล้ว 55555";
+                    break;
+                case EnemyType.Cat:
+                    WinUI.Instance.textWin = "เหมี่ยว";
+                    break;
+                case EnemyType.Grandmother:
+                    WinUI.Instance.textWin = "คุณได้ทำยายที่น่าสงสาร นอนตาหลับแล้ว";
+                    break;
+                case EnemyType.Father:
+                    WinUI.Instance.textWin = "<wave>หลวงพ่อก็ไม่เท่าไหร่";
+                    break;
+            }
         }
 
         private bool CheckDead()

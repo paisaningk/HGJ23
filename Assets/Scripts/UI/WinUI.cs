@@ -1,4 +1,5 @@
 ﻿using System;
+using TMPro;
 using Turn_Based_Combat.Character;
 using Unit;
 using UnityEngine;
@@ -15,6 +16,8 @@ namespace UI
         public Button closeUI;
         public UnityAction onCloseUI;
         public Player player;
+        public string textWin;
+        public TMP_Text textWinTMPText;
         private bool _move;
 
         public GameObject endBattleGameObject;
@@ -90,6 +93,7 @@ namespace UI
             _move = shouldMove;
 
             endBattleGameObject.SetActive(false);
+            textWinTMPText.SetText(textWin);
         }
 
         public void CloseUi()

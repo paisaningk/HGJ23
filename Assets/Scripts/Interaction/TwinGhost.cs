@@ -13,6 +13,7 @@ namespace Interaction
         {
             if (!isInteraction)
             {
+                WinUI.Instance.textWin = "<rainb>เกิดไรขึ้น";
                 WinUI.Instance.OpenTwinCutscenes();
                 WinUI.Instance.onCloseUI += (() =>
                 {

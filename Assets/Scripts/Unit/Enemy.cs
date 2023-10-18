@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections;
+using DG.Tweening;
 using Turn_Based_Combat.ActionCharacter;
 using Turn_Based_Combat.Character;
 using UnityEngine;
@@ -15,14 +16,24 @@ namespace Unit
         public bool haveStateTwo;
         public bool isStateTwo;
         public bool changAnim;
+        public bool shouldMove;
+        public GameObject moveIfDie;
+        public bool isMove;
 
         private void Update()
         {
-            if (isDead)
-            {
-                animator.Play("Die");
-                rigidbody2D.simulated = true;
-            }
+            if (!isDead) return;
+
+            animator.Play("Die");
+            rigidbody2D.simulated = true;
+
+            if (!shouldMove || isMove)
+                return;
+
+            if (!moveIfDie) return;
+
+            isMove = true;
+            transform.DOMove(moveIfDie.transform.position, 1f);
         }
 
         public override void TakeDamage(int damage)
