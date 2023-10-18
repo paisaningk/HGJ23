@@ -17,11 +17,12 @@ namespace Turn_Based_Combat.ActionCharacter
             var transformPosition = other.transform.position;
             if (self is Player)
             {
-                transformPosition.x -= 3f;
+                transformPosition.x -= 5f;
             }
             else
             {
-                transformPosition.x += 3f;
+                transformPosition.x += 5f;
+              
             }
 
             self.transform.DOMove(transformPosition, 1f).OnComplete((() =>
