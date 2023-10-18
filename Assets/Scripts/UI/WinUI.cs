@@ -55,11 +55,18 @@ namespace UI
             }
         }
 
-        public void OpenEndBattle()
+        public void OpenTwinCutscenes()
         {
             endBattleGameObject.SetActive(true);
             player.movement.canMove = false;
             animator.Play("Twin");
+        }
+
+        public void OpenCutSceneOpening()
+        {
+            endBattleGameObject.SetActive(true);
+            player.movement.canMove = false;
+            animator.Play("OP");
         }
 
         public void OpenUI(Player player, bool shouldMove = true)

@@ -10,7 +10,7 @@ namespace Interaction
 
         public override void Interaction()
         {
-            WinUI.Instance.OpenEndBattle();
+            WinUI.Instance.OpenTwinCutscenes();
             WinUI.Instance.onCloseUI += (() =>
             {
                 animator.Play("fade");
