@@ -56,7 +56,7 @@ namespace Turn_Based_Combat.ActionCharacter
 
                     if (enemy.status is EnemyStatus { enemyType: EnemyType.Father } && other is Player { armor: true })
                     {
-                        realDmg -= 100;
+                        realDmg -= 20;
                     }
 
                     break;

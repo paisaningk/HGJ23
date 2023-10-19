@@ -8,11 +8,12 @@ namespace Unit
     {
         public Animator animator;
         public Player player;
+        public Enemy enemy;
 
 
         public void Update()
         {
-            if (player.catFriend)
+            if (player.catFriend && enemy.isDead)
             {
                 animator.Play("idle2");
             }

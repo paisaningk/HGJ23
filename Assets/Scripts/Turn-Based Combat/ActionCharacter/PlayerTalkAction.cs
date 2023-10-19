@@ -29,7 +29,7 @@ namespace Turn_Based_Combat.ActionCharacter
                     timeInAction);
             }
 
-            if (self is Player { catFood: true } player)
+            if (self is Player { catFood: true } player && status.enemyType == EnemyType.Cat)
             {
                 other.talkUI.OpenUI("ได้ขนมแล้ว ขอบคุณนะ", timeInAction);
                 player.catFriend = true;

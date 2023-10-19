@@ -32,7 +32,7 @@ public class Movement : MonoBehaviour
 
         if (direction.x != 0 || direction.y > 0)
         {
-            rigidbody2D.gravityScale = 0.3f;
+            rigidbody2D.gravityScale = 0.1f;
         }
         else
         {

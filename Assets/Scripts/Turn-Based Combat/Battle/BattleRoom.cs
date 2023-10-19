@@ -61,6 +61,7 @@ namespace Turn_Based_Combat.Battle
             player.enemyToFight = enemy;
             player.animator.Play("PlayerIdle");
             player.movement.sprite.flipX = false;
+            BattleHPUI.Instance.doingText.SetText($"เรื่มการต่อสู้");
             
             ActionUI.Instance.onUseAction += EnemyTurn;
             BattleHPUI.Instance.OpenUI(enemy);
