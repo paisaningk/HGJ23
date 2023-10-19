@@ -11,7 +11,13 @@ namespace Turn_Based_Combat.ActionCharacter
 
         public override void DoAction(BaseUnit self, BaseUnit other)
         {
-            self.Heal(heal);
+            var realHeal = this.heal;
+            if (self is Player { rawRoti: true })
+            {
+                realHeal *= 2;
+            }
+
+            self.Heal(realHeal);
 
             BattleHPUI.Instance.doingText.SetText($"{self.status.characterName} ได้ Heal ตัวเอง {heal} หน่วย");
             BattleHPUI.Instance.UpdateHp();

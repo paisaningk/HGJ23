@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using Turn_Based_Combat.Character;
@@ -28,8 +29,16 @@ namespace Turn_Based_Combat.ActionCharacter
                     timeInAction);
             }
 
+            if (self is Player { catFood: true } player)
+            {
+                other.talkUI.OpenUI("ได้ขนมแล้ว ขอบคุณนะ", timeInAction);
+                player.catFriend = true;
+                other.StartDelayHeal();
+            }
+
             BattleHPUI.Instance.doingText.SetText($"{self.status.characterName} พูดกับ {other.status.characterName}");
         }
+        
     }
 
     [Serializable]

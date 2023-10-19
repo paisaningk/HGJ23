@@ -24,6 +24,8 @@ namespace Turn_Based_Combat.Battle
         public CinemachineVirtualCamera cameraBattleRoom;
         public bool isSetupEnemy;
 
+        public bool isCat;
+
         public void OnValidate()
         {
             GetComponent<BoxCollider2D>().isTrigger = true;
@@ -31,16 +33,14 @@ namespace Turn_Based_Combat.Battle
 
         public void OnTriggerEnter2D(Collider2D col)
         {
+            if (isCat) return;
             if (!col.CompareTag("Player")) return;
             if (enemy.isDead) return;
             if (isBattle) return;
-            
-            isBattle = true;
 
             if (col.TryGetComponent(out Player component))
             {
                 player = component;
-                player.movement.StopMove();
             }
             else
             {
@@ -50,8 +50,10 @@ namespace Turn_Based_Combat.Battle
             SetUpBattleRoom();
         }
 
-        private void SetUpBattleRoom()
+        public void SetUpBattleRoom()
         {
+            isBattle = true;
+            player.movement.StopMove();
             player.transform.DOMove(spawnPlayerPoint.position, 1f);
             enemy.transform.DOMove(spawnEnemyPoint.position, 1f);
 
@@ -87,13 +89,15 @@ namespace Turn_Based_Combat.Battle
             switch (enemyStatus.enemyType)
             {
                 case EnemyType.Dog:
-                    WinUI.Instance.textWin = "คุณหลอกหมาได้แล้ว เก่งมาก";
+                    WinUI.Instance.textWin = "คุณหลอกหมาได้แล้ว เก่งมากเจ้าหมาตัวใหม่";
                     break;
                 case EnemyType.YoungChild:
                     WinUI.Instance.textWin = "ไอ้เด็กนี้ โดนเราหลอกคืนแล้ว 55555";
                     break;
                 case EnemyType.Cat:
-                    WinUI.Instance.textWin = "เหมี่ยว";
+                    WinUI.Instance.textWin = player.catFriend
+                        ? "<rainb>คุณได้แมวเป็นเพื่อนแล้ว"
+                        : "แมวไม่ชอบคุณ แมวจะจดจำสิ่งนี้ไว้จนตาย";
                     break;
                 case EnemyType.Grandmother:
                     WinUI.Instance.textWin = "คุณได้ทำยายที่น่าสงสาร นอนตาหลับแล้ว";

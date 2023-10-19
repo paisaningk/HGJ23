@@ -100,6 +100,17 @@ namespace Unit
             }
         }
 
+        public void StartDelayHeal()
+        {
+            StartCoroutine(DelayHeal());
+        }
+
+        private IEnumerator DelayHeal()
+        {
+            yield return new WaitForSecondsRealtime(3f);
+            TakeDamage(999);
+        }
+
         public void TakeFear(int damage)
         {
             fear += damage;

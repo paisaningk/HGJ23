@@ -1,4 +1,5 @@
 ﻿using System;
+using Unit;
 using UnityEngine;
 
 namespace Interaction
@@ -7,6 +8,7 @@ namespace Interaction
     [RequireComponent(typeof(BoxCollider2D))]
     public class BaseInteraction : MonoBehaviour
     {
+        public Player player;
         public GameObject icon;
 
         public bool canInteraction;
@@ -20,6 +22,7 @@ namespace Interaction
         public void OnTriggerEnter2D(Collider2D col)
         {
             if (!col.CompareTag("Player")) return;
+            player = col.GetComponent<Player>();
             canInteraction = true;
             icon.SetActive(canInteraction);
         }
@@ -31,7 +34,7 @@ namespace Interaction
             icon.SetActive(canInteraction);
         }
 
-        public void Update()
+        public virtual void Update()
         {
             if (!canInteraction) return;
 

@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using DG.Tweening;
+using Turn_Based_Combat.Character;
 using UI;
 using Unit;
 using UnityEngine;
@@ -23,6 +24,7 @@ namespace Turn_Based_Combat.ActionCharacter
         public override void DoAction(BaseUnit self, BaseUnit other)
         {
             var transformPosition = other.transform.position;
+            var realDmg = damage;
 
             _isPlayer = true;
             _attack = attackSprite;
@@ -30,8 +32,17 @@ namespace Turn_Based_Combat.ActionCharacter
 
             switch (self)
             {
-                case Player:
+                case Player player:
                     transformPosition.x -= 5f;
+                    if (player.goldenDrugs)
+                    {
+                        realDmg *= 2;
+                    }
+
+                    if (player.catFriend)
+                    {
+                        realDmg += 50;
+                    }
                     break;
                 case Enemy enemy:
                 {
@@ -43,17 +54,22 @@ namespace Turn_Based_Combat.ActionCharacter
                         _text = action2Text;
                     }
 
+                    if (enemy.status is EnemyStatus { enemyType: EnemyType.Father } && other is Player { armor: true })
+                    {
+                        realDmg -= 100;
+                    }
+
                     break;
                 }
             }
 
             self.transform.DOMove(transformPosition, 1f).OnComplete((() =>
             {
-                other.TakeDamage(damage);
+                other.TakeDamage(realDmg);
 
                 BattleHPUI.Instance.ShowAttack(_isPlayer, _attack);
                 BattleHPUI.Instance.doingText.SetText(
-                    $"{self.status.characterName} {_text} {other.status.characterName} ไป {damage} ความเสียหาย");
+                    $"{self.status.characterName} {_text} {other.status.characterName} ไป {realDmg} ความเสียหาย");
                 BattleHPUI.Instance.UpdateHp();
             }));
         }
