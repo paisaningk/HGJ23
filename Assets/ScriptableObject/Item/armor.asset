@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 772b000de80a4b19b0948095b25de696, type: 3}
   m_Name: armor
   m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: 0f2c926a4a76c3c469eed18450e21ace, type: 3}
+  sprite: {fileID: 21300000, guid: 7fa437bec0f862f489ab2fff497657b9, type: 3}
   text: "\u0E04\u0E38\u0E13\u0E44\u0E14\u0E49\u0E23\u0E31\u0E1A\u0E40\u0E01\u0E23\u0E32\u0E30\u0E01\u0E31\u0E19\u0E01\u0E23\u0E30\u0E2A\u0E38\u0E19\n\u0E40\u0E2D\u0E32\u0E21\u0E32\u0E17\u0E33\u0E44\u0E23\n\u0E17\u0E33\u0E25\u0E14\u0E04\u0E27\u0E32\u0E21\u0E40\u0E2A\u0E35\u0E22\u0E2B\u0E32\u0E22\u0E08\u0E32\u0E01\u0E01\u0E23\u0E30\u0E2A\u0E38\u0E19\u0E1B\u0E37\u0E19"
