@@ -17,4 +17,4 @@ MonoBehaviour:
   attackSprite2: {fileID: 21300000, guid: 07075c86f31a42d41aaf231dc65dd0a4, type: 3}
   actionText: "<bounce>\u0E43\u0E0A\u0E49\u0E1E\u0E25\u0E31\u0E07\u0E28\u0E31\u0E01\u0E14\u0E34\u0E4C\u0E2A\u0E34\u0E17\u0E18\u0E34\u0E4C</bounce>"
   action2Text: "<bounce>\u0E43\u0E0A\u0E49\u0E1B\u0E37\u0E19\u0E22\u0E34\u0E07</bounce>"
-  damage: 50
+  damage: 100

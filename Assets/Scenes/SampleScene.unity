@@ -5713,9 +5713,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 9169340730098458010}
-  icon: {fileID: 708859134}
+  icon: {fileID: 0}
   canInteraction: 0
   panel: {fileID: 1329391339}
+  iconnew: {fileID: 1726680573}
   enemy: {fileID: 1589092368}
   endGameUI: {fileID: 926285625}
 --- !u!50 &527882086
@@ -7299,7 +7300,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &708859135
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12578,10 +12579,10 @@ RectTransform:
   m_Father: {fileID: 1496225979}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 289.265, y: -68.875}
-  m_SizeDelta: {x: 538.53, y: 96.25}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1287643662
 CanvasRenderer:
@@ -15159,10 +15160,10 @@ RectTransform:
   m_Father: {fileID: 1910624454}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 289.265, y: -137}
-  m_SizeDelta: {x: 578.53, y: 137}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!95 &1496225980
 Animator:
@@ -19986,7 +19987,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -14, y: 137}
+  m_SizeDelta: {x: -14, y: 0}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &1910624455
 MonoBehaviour:

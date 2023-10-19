@@ -8,6 +8,7 @@ namespace Interaction
     public class EndGame : BaseInteraction
     {
         public GameObject panel;
+        public GameObject iconnew;
         public Enemy enemy;
         public EndGameUI endGameUI;
 
@@ -15,11 +16,13 @@ namespace Interaction
         {
             if (!enemy.isDead)
             {
+                iconnew.SetActive(false);
                 panel.SetActive(false);
                 return;
             }
 
             panel.SetActive(true);
+            iconnew.SetActive(true);
 
             if (!canInteraction) return;
 

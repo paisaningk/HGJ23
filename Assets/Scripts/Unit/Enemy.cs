@@ -25,7 +25,6 @@ namespace Unit
             if (!isDead) return;
 
             animator.Play("Die");
-            rigidbody2D.simulated = true;
 
             if (!shouldMove || isMove)
                 return;
