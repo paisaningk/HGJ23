@@ -78,6 +78,13 @@ namespace UI
             animator.Play("Twin");
         }
 
+        public void OpenEnd()
+        {
+            endBattleGameObject.SetActive(true);
+            player.movement.canMove = false;
+            animator.Play("ED");
+        }
+
         public void OpenCutSceneOpening()
         {
             endBattleGameObject.SetActive(true);
