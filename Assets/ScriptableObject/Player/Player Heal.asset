@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Player Heal
   m_EditorClassIdentifier: 
   timeInAction: 1
-  heal: 20
+  heal: 40

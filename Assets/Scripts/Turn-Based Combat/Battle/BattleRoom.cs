@@ -79,8 +79,9 @@ namespace Turn_Based_Combat.Battle
             ActionUI.Instance.onUseAction = null;
             cameraBattleRoom.enabled = false;
             BattleHPUI.Instance.CloseUI();
+            player.maxHp += 50;
             player.HealAfterBattle();
-            player.useHeal = 0;
+            
 
             WinUI.Instance.OpenEndBattle(enemy, player);
 

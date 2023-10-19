@@ -36,7 +36,7 @@ namespace Turn_Based_Combat.ActionCharacter
                 other.StartDelayHeal();
             }
 
-            BattleHPUI.Instance.doingText.SetText($"{self.status.characterName} พูดกับ {other.status.characterName}");
+            BattleHPUI.Instance.doingText.SetText($"{self.status.characterName}พูดกับ{other.status.characterName}");
         }
         
     }

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Father
   m_EditorClassIdentifier: 
   characterName: "\u0E2B\u0E25\u0E27\u0E07\u0E1E\u0E48\u0E2D"
-  hp: 300
+  hp: 400
   fear: 100
   enemyType: 5
   behaviour:

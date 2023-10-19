@@ -19,7 +19,7 @@ namespace Turn_Based_Combat.ActionCharacter
 
             self.Heal(realHeal);
 
-            BattleHPUI.Instance.doingText.SetText($"{self.status.characterName} ได้ Heal ตัวเอง {heal} หน่วย");
+            BattleHPUI.Instance.doingText.SetText($"{self.status.characterName}ได้ Heal ตัวเอง {heal} หน่วย");
             BattleHPUI.Instance.UpdateHp();
         }
     }

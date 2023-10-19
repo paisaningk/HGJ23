@@ -15,6 +15,6 @@ MonoBehaviour:
   timeInAction: 2
   attackSprite: {fileID: 21300000, guid: fa611448eb6ef244fa8f1b3ed9026675, type: 3}
   attackSprite2: {fileID: 21300000, guid: 078d625c81ff8fd46834ac19987f87b9, type: 3}
-  actionText: "<bounce>\u0E43\u0E0A\u0E49\u0E1E\u0E25\u0E31\u0E07\u0E28\u0E31\u0E01\u0E14\u0E34\u0E4C\u0E2A\u0E34\u0E17\u0E18\u0E34\u0E4C</bounce>"
-  action2Text: "<bounce>\u0E43\u0E0A\u0E49\u0E1B\u0E37\u0E19\u0E22\u0E34\u0E07</bounce>"
-  damage: 20
+  actionText: "<bounce>\u0E15\u0E1A</bounce>"
+  action2Text: "<bounce>\u0E15\u0E48\u0E2D\u0E22</bounce>"
+  damage: 35

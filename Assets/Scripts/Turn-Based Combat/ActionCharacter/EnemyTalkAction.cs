@@ -18,7 +18,7 @@ namespace Turn_Based_Combat.ActionCharacter
             self.talkUI.OpenUI(talk.enemyTalk.th, timeInAction);
             other.talkUI.OpenUI(talk.playerReaction.th, timeInAction);
 
-            BattleHPUI.Instance.doingText.SetText($"{self.status.characterName} พูดกับ {other.status.characterName}");
+            BattleHPUI.Instance.doingText.SetText($"{self.status.characterName}พูดกับ{other.status.characterName}");
         }
     }
 }

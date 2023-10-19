@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Cat
   m_EditorClassIdentifier: 
   characterName: "\u0E41\u0E21\u0E27"
-  hp: 100
+  hp: 150
   fear: 100
   enemyType: 2
   behaviour:

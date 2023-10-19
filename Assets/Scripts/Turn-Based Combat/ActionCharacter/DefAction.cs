@@ -14,7 +14,7 @@ namespace Turn_Based_Combat.ActionCharacter
             self.isDef = true;
             self.animator.Play(defAnimName);
 
-            BattleHPUI.Instance.doingText.SetText($"{self.status.characterName} ป้องกัน");
+            BattleHPUI.Instance.doingText.SetText($"{self.status.characterName}ป้องกัน");
         }
     }
 }

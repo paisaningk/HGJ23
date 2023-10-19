@@ -103,7 +103,7 @@ namespace UI
         public void SetTurn(bool isPlayerTurn)
         {
             turnText.SetText(
-                isPlayerTurn ? $"ตาของ {player.status.characterName}" : $"ตาของ {enemy.status.characterName} ");
+                isPlayerTurn ? $"ตาของ{player.status.characterName}" : $"ตาของ{enemy.status.characterName} ");
         }
 
         public void CloseUI()

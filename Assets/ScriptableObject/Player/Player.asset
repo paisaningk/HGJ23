@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Player
   m_EditorClassIdentifier: 
   characterName: "\u0E40\u0E23\u0E32"
-  hp: 100
+  hp: 150
   fear: 100
   attack: {fileID: 11400000, guid: 609d6f9faf0d6bf4c9005eef9b9285a3, type: 2}
   talk: {fileID: 11400000, guid: f60fb5979d64b884383083bd178326b4, type: 2}

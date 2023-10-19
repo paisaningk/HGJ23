@@ -69,7 +69,7 @@ namespace Turn_Based_Combat.ActionCharacter
 
                 BattleHPUI.Instance.ShowAttack(_isPlayer, _attack);
                 BattleHPUI.Instance.doingText.SetText(
-                    $"{self.status.characterName} {_text} {other.status.characterName} ไป {realDmg} ความเสียหาย");
+                    $"{self.status.characterName}{_text}{other.status.characterName}ไป {realDmg} ความเสียหาย");
                 BattleHPUI.Instance.UpdateHp();
             }));
         }
